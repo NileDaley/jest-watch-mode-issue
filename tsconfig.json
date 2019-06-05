@@ -1,0 +1,21 @@
+{
+    "extends": "./tsconfig-base.json",
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "jsx": "react",
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["src/renderer/*"],
+            "@public/*": ["public/*"]
+        },
+        "module": "es2015",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+        "sourceMap": true,
+        "target": "esnext"
+    },
+    "exclude": ["node_modules"]
+}
